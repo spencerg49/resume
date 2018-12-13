@@ -1,0 +1,200 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box; /* We'll explain next week */
+}
+
+body {
+  /* Remove the margin */
+  margin: 0;
+
+  /* Set the font-family to Helvetica, Arial, sans-serif */
+  font-family: Helvetica, Arial, sans-serif;
+
+  /* Increase the line height to 1.5 times the default font-size */
+  line-height: 1.5;
+
+}
+
+header {
+  max-width: 650px;
+  margin: auto;
+}
+
+p {
+  /* Set the margin bottom to 16px */
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+    text-align: center;
+}
+
+
+.title {
+  font-size: 30px;
+  margin: 15px 15px;
+  color: #A90000;
+}
+
+.bill-pic{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* main { */
+  /* Set the margin-bottom to 48px  */
+  /* margin-bottom: 48px; */
+/* } */
+
+/* section { */
+  /*  Set the margin-bottom to 48px */
+  /* margin-bottom: 48px; */
+/* } */
+
+/* The rules in the two selectors above are the same, can we remove duplication? */
+
+main,
+section {
+  margin-bottom: 48px;
+}
+
+nav ul {
+  /* Set the padding to 0 */
+  padding: 0px;
+}
+
+h2 {
+  /* Set the margin-bottom to 12px */
+  margin-bottom: 12px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h3, h4 {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+
+
+.nav-item {
+  /* Get each nav-item to sit inline beside each other */
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+
+}
+
+.nav-item a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  color: red;
+
+}
+
+.bio {
+  border: 3px solid #A90000;
+  border-radius: 10px;
+}
+
+.bioHeader {
+  margin: 0 0 20px 0;
+  background-color: #A90000;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/*  */
+.container {
+  /* Set a maximum width of 650px */
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  /* The container should stay in the middle of the page, how do we do that? */
+}
+
+.container ul, ol{
+  /* text-align: left; */
+}
+
+.copyright {
+  text-align: left;
+  font-size: 10px;
+
+}
+
+.social {
+  text-align: right;
+}
+.socialIcon {
+  width:50px;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+@media screen and (max-width:500px) {
+  .nav-item {
+    /* Get each nav-item to sit inline beside each other */
+    display: block;
+    margin: 5px 0px;
+    font-size: 20px;
+    background-color: #A90000;
+  }
+
+  .nav-item a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-item a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-item a:hover {
+    text-decoration: underline;
+    color: black;
+
+  }
+
+  .bio {
+    border-left: 0px solid #A90000;
+    border-right: 0px solid #A90000;
+    border-top: 0px solid #A90000;
+    border-bottom: 3px solid #A90000;
+    border-radius: 0px;
+  }
+
+  .bioHeader {
+    margin: 0 0 20px 0;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* Continue Styling! */
